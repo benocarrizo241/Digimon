@@ -1,0 +1,10 @@
+.mi-tabla {
+    max-width: 70%; /* Otra cantidad de porcentaje o píxeles */
+  }
+
+  .table{
+    margin:auto;
+    margin-top: 6%;
+    width: 80%;
+    
+  }

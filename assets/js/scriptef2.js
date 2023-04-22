@@ -26,14 +26,14 @@ function tabla(datos){
         contenido.innerHTML+=
         `
         <tr>
+
             <th scope="row">1</th>
             <td>${temp.name}</td>
             <td>${temp.level}</td>
-            <td><img src="${temp.img}" alt="Imagen de ${temp.name}"></td>
-            
-           
-        </tr>
+            <td><img src="${temp.img}" alt="Imagen de ${temp.name}" class="img-fluid w-25"></td> 
 
+
+        </tr>
         `
         if(temp.N == 10){
             break
