@@ -14,3 +14,7 @@ ejercicio.
 
 5.- El diseño de la página es libre, pero deberá contar con una barra de navegación, al menos dos
 eventos, ser agradable a la vista y adaptarse a distintos tamaños de pantallas.
+
+BARRA DE BUSQUEDA
+
+Solo se escribe y busca, no es necesario un botón.
