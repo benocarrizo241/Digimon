@@ -8,30 +8,72 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="shortcut icon" href="assets/img/ag.png" />
     
     
     <title>Ejemplo 01 JQuery</title>
   </head>
   <body>
+    <!------ BARRA DE NAVIGACION ------>
+    <div>
+    <!-- ---FONDO AZUL Y LOGO-->
+    <nav class="navbar navbar-expand-lg" id="color_nav">
+      <div class="container-fluid">
+        <img src="assets/img/digilogo.svg.png" alt="" width= 25% height="auto">
+        <!---- Cuando se hace pequeño se vuelve un boton-->
+        
+        <button class="navbar-toggler navbar-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Esta parte hace la lista cuando la pantalla es pequeña  -->
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent bus">
+          <img src="assets/img/digiv.png" alt="Imagen pequeña"  width= 8% height="auto">
+          <form class="d-flex mx-auto">
+            <input class="form-control me-2" id="buscar" type="search" placeholder="Search" aria-label="Search">
+            <!--<button class="btn btn-danger" type="submit">Search</button>-->
+          </form>
+        </div>
+      </div>
+    </nav>
+    
+  </div>
+  <!------ TITULO  --------->
+  <h1>DIGIMON WIKI</h1>
+    <!--------------- TABLA DIGIMON ----------->
     <div class="table-responsive">
       <table class="table container table-hover table-sm">
           <caption>List of users</caption>
           <thead>
             <tr>
-              <th scope="col">N</th>
+              <!--<th scope="col">N</th> -->
               <th scope="col">Nombre</th>
               <th scope="col">Nivel</th>
               <th scope="col">img</th>
             </tr>
           </thead>
           <tbody id="contenido">
-            
-          </tbody>
         </table>
     </div>
+    <!-- POPUP-->
+
+    <div class="modal fade" id="digimonModal" tabindex="-1" aria-labelledby="digimonModalLabel" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="digimonModalLabel"></h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <img class="img-fluid" src="" alt="" id="digimonModalImage">
+          </div>
+        </div>
+      </div>
+    </div>
       
-      <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
-      <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.slim.min.js" integrity="sha256-a2yjHM4jnF9f54xUQakjZGaqYs/V1CYvWpoqZzC2/Bw=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
     <script src="assets/js/scriptef2.js"></script>
   </body>

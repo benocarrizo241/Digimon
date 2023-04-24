@@ -1,9 +1,18 @@
 .mi-tabla {
-    max-width: 70%; /* Otra cantidad de porcentaje o píxeles */
-  }
+  max-width: 70%; /* Otra cantidad de porcentaje o píxeles */
+}
 
-  .table{
-    margin:auto;
-    margin-top: 6%;
-    width: 80%;
-  }
+.table{
+  margin:auto;
+  margin-top: 6%;
+  width: 80%;
+}
+#color_nav{
+  background-color: #25A6D9 ;
+}
+#colo_letra_nav{
+  color: white;
+}
+.img-div{
+  max-width: 10vw;
+}
